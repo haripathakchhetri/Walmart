@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/WareHouse/app/src/main/res/drawable/card_layout.xml" value="0.122" />
         <entry key="..\:/Users/user/AndroidStudioProjects/WareHouse/app/src/main/res/drawable/et_custom.xml" value="0.115" />
         <entry key="..\:/Users/user/AndroidStudioProjects/WareHouse/app/src/main/res/drawable/header.xml" value="0.13" />
         <entry key="..\:/Users/user/AndroidStudioProjects/WareHouse/app/src/main/res/drawable/search_white.xml" value="0.1155" />
         <entry key="..\:/Users/user/AndroidStudioProjects/WareHouse/app/src/main/res/drawable/white_background.xml" value="0.1155" />
         <entry key="..\:/Users/user/AndroidStudioProjects/WareHouse/app/src/main/res/layout/activity_forgot_password.xml" value="0.2" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/WareHouse/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/WareHouse/app/src/main/res/layout/activity_home.xml" value="0.18" />
         <entry key="..\:/Users/user/AndroidStudioProjects/WareHouse/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/WareHouse/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/WareHouse/app/src/main/res/layout/activity_signup.xml" value="0.2" />
