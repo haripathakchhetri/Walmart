@@ -93,21 +93,24 @@
           android:padding="15dp"
           app:layout_constraintDimensionRatio="H , 1:1"
           app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/add_customer"
           app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/add_items"
             android:layout_width="100dp"
             android:layout_height="100dp"
           android:src="@drawable/add_items"
           android:layout_margin="4dp"
           android:padding="8dp"
-          android:contentDescription="@string/app_name"/>
+          android:contentDescription="@string/app_name"
+            android:onClick="ShowAddPopup"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
           android:text="Add Items"
-          android:textSize="22sp"
+          android:textSize="15sp"
           android:textColor="@color/black"
           android:textStyle="bold"/>
 
@@ -128,11 +131,13 @@
           app:layout_constraintTop_toTopOf="parent"
           >
         <ImageView
+            android:id="@+id/addCustomer"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/add_customer"
             android:layout_margin="4dp"
             android:contentDescription="@string/app_name"
+            android:onClick="ShowAddCustomer"
             android:padding="8dp"
             />
         <TextView
@@ -144,7 +149,7 @@
             android:textColor="@color/black"/>
       </LinearLayout>
       <LinearLayout
-          android:id="@+id/delete_item"
+          android:id="@+id/view_item"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_marginTop="20dp"
@@ -160,21 +165,22 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/delete_items"
+            android:src="@drawable/view_items"
             android:layout_margin="4dp"
             android:contentDescription="@string/app_name"
+            android:onClick="View_Items"
             android:padding="8dp"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delete Items"
+            android:text="View Items"
             android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@color/black"/>
       </LinearLayout>
       <LinearLayout
-          android:id="@+id/delete_customer"
+          android:id="@+id/view_customer"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_marginTop="20dp"
@@ -190,15 +196,16 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/update_items"
+            android:src="@drawable/view_customer"
             android:layout_margin="4dp"
             android:contentDescription="@string/app_name"
+            android:onClick="View_Customer"
             android:padding="8dp"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Update Items"
+            android:text="View Customer"
             android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@color/black"/>
@@ -215,7 +222,7 @@
           app:layout_constraintDimensionRatio="H,1:1"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintEnd_toStartOf="@id/add_customer"
-          app:layout_constraintTop_toBottomOf="@id/delete_item"
+          app:layout_constraintTop_toBottomOf="@id/view_item"
           >
         <ImageView
             android:layout_width="100dp"
@@ -245,7 +252,7 @@
           app:layout_constraintDimensionRatio="H,1:1"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toEndOf="@id/addItems"
-          app:layout_constraintTop_toBottomOf="@id/delete_customer"
+          app:layout_constraintTop_toBottomOf="@id/view_customer"
           >
         <ImageView
             android:layout_width="100dp"
@@ -317,5 +324,15 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
   </ScrollView>
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/navigation"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:menu="@menu/menu"
+      android:backgroundTint="@color/white"
+      app:itemIconSize="40dp"
+      app:labelVisibilityMode="unlabeled"
+      app:layout_constraintBottom_toBottomOf="parent"
+      />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
